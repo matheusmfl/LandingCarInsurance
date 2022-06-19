@@ -1,0 +1,112 @@
+header{
+    position: relative;
+    padding: 0 1rem 0 0;
+    background-color: $section-color;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-height: 100vw;
+    height: 37rem;
+
+
+    .logo{
+        font-family: $font-logo;
+        color: $logo-color1;
+        font-size: $h1;
+
+        span{
+            color: $logo-color2
+        }
+        
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 1rem 2rem 1rem;
+        align-items: center;
+
+        ul{
+
+           
+            display: flex;
+            li{
+                list-style: none;
+                margin-left: 1.4rem;
+                font-size: $p;
+                cursor: pointer;
+
+                &:hover{
+                    color: purple;
+                }
+                
+            }
+
+        }
+
+    }
+    
+    .headerContainer{
+        padding: $paddingSection;
+        padding-bottom: 0;
+        margin-top: $paddingSection;
+        display: flex;
+        align-items: space-between;
+        .textContainer{
+
+            display: flex;
+            justify-content: center;
+            padding-bottom: 5rem;
+            flex-direction: column;
+            h1{
+                text-align:left;
+                margin-bottom: 5rem;
+                position: relative;
+
+                &::after{
+                    content: '';
+                    margin-top: 35px;
+                    width: 15%;
+                    height: 10px;
+                    background:#10bdd4;
+                    display: block;
+                   
+                }
+            }
+
+           
+            p{
+                font-size: $p;
+            }
+
+        }
+        .bannerContainer{
+            margin-left: 4rem;
+            position: relative;
+
+            .bannerHeader{
+                position: absolute;
+                bottom: -9rem;
+                height: 26.5rem;
+                width: 32.125rem;
+                background-color: $banner-color;
+                border-radius: 29px;
+                display: flex;
+                align-items: center;
+
+
+                .banner{
+                    position: relative;
+                    img{
+                        width: 35rem;
+                        position: absolute;
+                        top:-10rem;
+                        left:-4rem;
+                        bottom: -15rem;
+
+                    }
+                }
+            }
+        }
+    }
+}
